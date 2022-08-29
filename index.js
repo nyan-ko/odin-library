@@ -13,7 +13,6 @@ function addBook(book) {
 
 function display() {
     const books = document.querySelector(".library");
-    console.log(library);
     for (let i = 0; i < library.length; i++) {
         const book = document.createElement("div");
         book.classList.add("book");
