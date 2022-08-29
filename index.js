@@ -1,3 +1,13 @@
+document.querySelector(`button[name="add"]`).addEventListener('click', showForm);
+
+const overlay = document.querySelector(".overlay");
+const form = document.querySelector(".form");
+
+overlay.addEventListener('click', hideForm);
+form.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
+
 let library = ["meow", "meow 2", "meow 3", "meow 4"];
 
 function Book (title, author, pages, read) {
@@ -19,6 +29,14 @@ function display() {
         book.textContent = library[i];
         books.appendChild(book);
     }
+}
+
+function showForm(e) {
+    overlay.classList.remove("invisible");
+}
+
+function hideForm(e) {
+    overlay.classList.add("invisible");
 }
 
 display();

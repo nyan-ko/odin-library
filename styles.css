@@ -8,6 +8,8 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
     font-family: sans-serif;
     padding: 28px 90px;
     box-shadow: 0 2px 16px -8px #111111;
@@ -40,4 +42,29 @@ body {
 
 .book {
     background-color: grey;
+}
+
+.invisible {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(32, 32, 32, 0.8);
+}
+
+.form {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    background-color: white;
+    padding: 30px;
 }
