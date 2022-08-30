@@ -9,7 +9,7 @@ form.addEventListener('click', (e) => {
     e.stopPropagation();
 });
 
-let library = ["meow", "meow 2", "meow 3", "meow 4"];
+let library = [];
 
 function Book (title, author, pages, read) {
     this.title = title;
